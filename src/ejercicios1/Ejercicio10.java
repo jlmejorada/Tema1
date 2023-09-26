@@ -18,6 +18,7 @@ public class Ejercicio10 {
 		
 		//Pasamos el mensaje con el calculo realizado
 		System.out.println("El precio con iva es de: " + resu + "€");
+		sc.close();
 	}
 
 }
