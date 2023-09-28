@@ -20,7 +20,7 @@ public class Ejercicio2 {
 		resto = (resto == 0)? resto : 7 - resto;
 		
 		//Mostramos por pantalla, cuanto le queda al número para ser multiplo de 7
-		System.out.println("A tu número le falta " + resto + " para ser multiplo de 7");
+		System.out.println("A tu número le falta sumarle " + resto + " para ser multiplo de 7");
 		
 		//Cerramos el escanner
 		sc.close();
