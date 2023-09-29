@@ -8,6 +8,9 @@ public class Ejercicio3 {
 		// Creamos una variable que recoja dos número enteros y el resto de modulo
 		int num1, num2, resto;
 		
+		//Creamos la constante para el número 0
+		final int NUM0=0;
+		
 		//Creamos una variable scanner
 		Scanner sc = new Scanner(System.in);
 		
@@ -20,8 +23,8 @@ public class Ejercicio3 {
 		num2 = sc.nextInt();
 		
 		//Calculamos a traves de su modulo, cuando le queda oara ser multiplo del segun número
-		resto = num2 - (num1%num2);
-		resto = (resto == 0)? resto : num2 - resto;
+		resto = (num1%num2);
+		resto = (resto == NUM0)? resto : num2 - resto;
 		
 		//Mostramos por pantalla, cuanto le queda al número para ser multiplo de 7
 		System.out.println("A tu número le falta sumarle " + resto + " para ser multiplo de " + num2);

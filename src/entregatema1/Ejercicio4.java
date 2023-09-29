@@ -8,6 +8,9 @@ public class Ejercicio4 {
 		// Creamos las variables para la base, altura y area del triangulo
 		float base, altura, area;
 		
+		//Creamos la constante para el número 2
+		final int NUM2=2;
+		
 		//Creamos una variable scanner
 		Scanner sc = new Scanner(System.in);
 
@@ -19,7 +22,7 @@ public class Ejercicio4 {
 		altura = sc.nextFloat();
 		
 		//Calculamos el área del triángulo
-		area = (base*altura)/2;
+		area = (base*altura)/NUM2;
 		
 		//Mostramos el area por pantalla
 		System.out.println("El área de tu triangulo de es " + area);

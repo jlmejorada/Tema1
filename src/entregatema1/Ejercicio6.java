@@ -16,15 +16,21 @@ public class Ejercicio6 {
 		System.out.println("Dame un número de segundos");
 		numero = sc.nextInt();
 		
+		//Creamos la constante para 3600
+		final int SEGUNDOTOHORA=36000;
+		
+		//Creamos la constante para 60
+		final int SEGUNDOTOMIN=60;
+		
 		//Calulamos las horas
-		horas=numero/3600;
+		horas=numero/SEGUNDOTOHORA;
 		//Calculamos el resto de las horas
-		resto=numero%3600;
+		resto=numero%SEGUNDOTOHORA;
 		
 		//Calulamos los minutoas
-		minutos=resto/60;
+		minutos=resto/SEGUNDOTOMIN;
 		//Calculamos el resto de los minutos, que seran los segundos
-		segundos=resto%60;
+		segundos=resto%SEGUNDOTOMIN;
 		
 		//Devolvemos la hora en horas minutos y segundos
 		System.out.println(numero + " segundos son " + horas + " horas " + minutos + " minutos " + segundos + " 5segundos ");

@@ -11,6 +11,12 @@ public class Ejercicio7 {
 		//Creamos los cambios de medida y el resultado
 		float mmToCm, mToCm, resultado;
 		
+		//Creamos la constante para los mm
+		final int CONST_mm=10;
+		
+		//Creamos la constante para los m
+		final int CONST_m=100;
+		
 		//Creamos una variable escaner
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,10 +33,10 @@ public class Ejercicio7 {
 		m = sc.nextFloat();
 		
 		//Calculamos los mm en cm
-		mmToCm = mm / 10;
+		mmToCm = mm / CONST_mm;
 		
 		//Calculamos los mm en cm
-		mToCm = m * 100;
+		mToCm = m * CONST_m;
 		
 		//Sumamos todos los cm
 		resultado = mmToCm + mToCm + cm;
