@@ -11,6 +11,9 @@ public class Ejercicio1 {
 		//Creamos una variable int para almacenar el número que saquemos de la comparación
 		int comp;
 		
+		//Creamos la constante para comparar y ver si redondear o truncar
+		final float REDONDEO=0.5f;
+		
 		//Creamos una variable scanner;
 		Scanner sc = new Scanner(System.in);
 		
@@ -22,7 +25,7 @@ public class Ejercicio1 {
 		decimal = num - (int) num;
 		
 		//Hacemos una comparación para ver si la parte decimal es mayor/igual o menor de 0.5
-		comp = (decimal>=0.5) ? (int)(++num) : (int)num;
+		comp = (decimal>=REDONDEO) ? (int)(++num) : (int)num;
 		
 		//Mostramos por pantalla el número redondeado
 		System.out.println("El número redondeado es: " + comp);
